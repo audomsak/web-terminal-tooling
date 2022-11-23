@@ -22,8 +22,19 @@ RUN mkdir -p /home/user $INITIAL_CONFIG && \
     vi vim nano \
     # developer tools
 #@brew     mc \
-    curl tar git procps jq && \
+    curl tar git procps jq maven && \
     microdnf -y clean all
+
+RUN microdnf install -y java-17-openjdk-devel \
+            && microdnf clean all \
+            && rpm -q java-17-openjdk-devel
+
+ENV JAVA_HOME="/usr/lib/jvm/java-17" \
+    JAVA_VENDOR="openjdk" \
+    JAVA_VERSION="17"
+
+RUN alternatives --set java java-17-openjdk.x86_64 && \
+    alternatives --set javac java-17-openjdk.x86_64
 
 ADD container-root-x86_64.tgz /
 # Propagate tools to path and install bash autocompletion
