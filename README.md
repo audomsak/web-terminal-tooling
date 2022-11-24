@@ -12,6 +12,9 @@ Includes tools that a Kubernetes and OpenShift developer would like find in thei
 - [Tekton CLI](https://github.com/tektoncd/cli) [0.19.1](https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/pipeline/0.17.2)
 - [rhoas](https://github.com/redhat-developer/app-services-cli) [0.34.2](https://github.com/redhat-developer/app-services-cli/releases/tag/0.34.2)
 - [submariner](https://github.com/submariner-io/submariner) [v0.12.1](https://github.com/submariner-io/submariner/releases/tag/v0.12.1)
+- [Maven](https://maven.apache.org/) [3.5.4](https://archive.apache.org/dist/maven/maven-3/3.5.4/binaries/)
+- [Java](https://openjdk.org/projects/jdk/17/) [17.0.5](https://rockylinux.pkgs.org/8/rockylinux-appstream-aarch64/java-17-openjdk-devel-17.0.5.0.8-2.el8_6.aarch64.rpm.html)
+- [PostgreSQL client](https://www.postgresql.org/download/linux/redhat/) [10](https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-8-x86_64/)
 
 ## Contributing
 
