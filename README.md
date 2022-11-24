@@ -23,9 +23,9 @@ Includes tools that a Kubernetes and OpenShift developer would like find in thei
 There is [template.Dockerfile](https://github.com/redhat-developer/web-terminal-tooling/blob/master/build/template.Dockerfile) that is processed by build.sh script to apply needed changes before build. So, execute the following but before uncomment configuration params if needed.
 
 ```bash
-# TOOL=podman # can be docker
-# MODE=local # can be brew
-# WEB_TERMINAL_TOOLING_IMG=web-terminal-tooling:local
+TOOL=podman # can be docker
+MODE=local # can be brew
+WEB_TERMINAL_TOOLING_IMG=web-terminal-tooling:local
 ./build.sh
 ```
 
@@ -34,5 +34,8 @@ There is [template.Dockerfile](https://github.com/redhat-developer/web-terminal-
 ```bash
 podman run -ti --rm web-terminal-tooling:local bash
 ```
+## Container Registry
+
+Avaliable at [Red Hat Quay](https://quay.io/repository/asuksunt/web-terminal-tooling?tab=tags)
 
 Upstream and downstream are synced via this [job](https://codeready-workspaces-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/web-terminal-sync-web-terminal-tooling/)
